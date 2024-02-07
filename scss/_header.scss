@@ -1,0 +1,64 @@
+/* header */
+
+@mixin uno {
+    text-decoration: none;
+    color: $color-beige;
+}
+
+@mixin dos {
+    text-align: center;
+    color: $color-beige;
+
+
+}
+
+h1,
+h2,
+h3 {
+    color: $color-rojo;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    @include dos;
+    text-decoration: solid;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    background-image: url("../img/pizza\ 3.jpg");
+    width: 100%;
+
+    ul li {
+        text-align: right;
+        display: inline-block;
+        margin: 0 10px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Rubik', sans-serif;
+    }
+}
+
+a {
+    @include dos;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+
+}
